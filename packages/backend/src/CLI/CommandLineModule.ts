@@ -16,11 +16,11 @@ class CommandLineModule extends AbstractModule {
 			this.command = yargs(argv).command(
 				"db",
 				"Database utilities",
-				(yargs) => {
+				() => {
 					return yargs.command(
 						"init",
 						"Initialize database tables",
-						(yargs) => {
+						() => {
 							return yargs(argv).command(
 								"user",
 								"Create a user in the database.",
