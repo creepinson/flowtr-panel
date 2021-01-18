@@ -5,14 +5,13 @@
   "main": "lib/backend/core/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:backend": "babel src/modules/backend/src -d lib/backend --copy-files && node lib/backend/core/index.js",
-    "start:frontend": "babel src/modules/backend -d lib --copy-files && node lib/core/index.js"
+    "dev": "ultra -r start"
   },
   "author": "Stijn Stroeve",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5"
+    "eslint": "^7.18.0",
+    "prettier": "^2.2.1",
+    "ultra-runner": "^3.9.0"
   }
 }

@@ -2,5 +2,5 @@
 node_modules/
 **/lib/
 logs/
-**/backend/public/
-**/backend/typings/
+.env
+.eslintcache
